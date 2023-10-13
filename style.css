@@ -1,0 +1,96 @@
+:root {
+    --white: #fff;
+    --text-color: #62636f;
+    --primary-violet: #6445af;
+    --gray-bottom: #f0f0f0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--text-color);
+}
+
+.container {
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    max-width: 640px;
+    min-height: 500px;
+    border-radius: 16px;
+    background-color: var(--white);
+    box-shadow: rgba(100, 100, 111, 0.2)
+    0px 7px 29px 0px;
+    overflow: auto;
+}
+
+.container-trending {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.container-description {
+    width: 100%;
+}
+
+header {
+    position: relative;
+}
+
+.tab-content--active {
+    display: block;
+}
+
+.tabs {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    gap: 8px;
+    padding-top: 8px;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid var(--gray-bottom);
+    margin-bottom: 12px;
+}
+
+.tabs > a {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    padding: 8px;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    justify-content: start;
+    color: var(--text-color);
+    transition: all 0.2s ease-in-out;
+    align-items: center;
+    margin-bottom: -1px;
+    gap: 8px;
+}
+
+.tabs > .active {
+    font-weight: 700;
+    outline: none;
+    color: var(--primary-violet);
+    border-bottom: 1px solid var(--primary-violet);
+}
+
+.tabs > a > svg {
+    stroke: var(--white);
+}
+
+.tabs > .active > svg {
+    stroke: var(--primary-blue);
+}
+/* 
+. record {
+
+} */
