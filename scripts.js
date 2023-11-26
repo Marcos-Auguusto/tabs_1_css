@@ -28,3 +28,9 @@ allLinks.forEach((elem) => {
         });
     });
 });
+
+const tabRecords = [
+    {
+        src: "assets/slack.png",    
+    }
+];
